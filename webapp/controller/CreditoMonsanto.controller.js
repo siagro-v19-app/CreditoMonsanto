@@ -37,11 +37,7 @@ sap.ui.define([
 				properties: {
 					"Id": 0,
 					"Codigo": "",
-					"Descricao": "",
-					"Empresa" : Session.get("EMPRESA_ID"),
-					"Usuario": Session.get("USUARIO_ID"),
-					"EmpresaDetails": { __metadata: { uri: "/Empresas(" + Session.get("EMPRESA_ID") + ")"}},
-					"UsuarioDetails": { __metadata: { uri: "/Usuarios(" + Session.get("USUARIO_ID") + ")"}}
+					"Descricao": ""
 				}
 			});
 			
