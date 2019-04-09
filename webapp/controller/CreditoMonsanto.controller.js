@@ -1,8 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageBox", 
-	"br/com/idxtecCotacaoMoeda/services/Session"
-], function(Controller, MessageBox, Session) {
+	"sap/m/MessageBox"
+], function(Controller, MessageBox) {
 	"use strict";
 
 	return Controller.extend("br.com.idxtecCreditoMonsanto.controller.CreditoMonsanto", {
