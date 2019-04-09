@@ -120,11 +120,14 @@ sap.ui.define([
 				return;
 			} else{
 				oModel.submitChanges({
-					success: function(){
-						oModel.refresh(true);
-						MessageBox.success(oViewModel.getData().msg);
-						oView.byId("CreditoMonsantoDialog").close();
-						oView.byId("tableCredito").clearSelection();                         
+					success: function(oResponse){
+						var erro = oResponse.__batchResponses[0].response;
+						if(!erro){
+							oModel.refresh(true);
+							MessageBox.success(oViewModel.getData().msg);
+							oView.byId("CreditoMonsantoDialog").close();
+							oView.byId("tableCredito").clearSelection();
+						}
 					}
 				});
 			}
