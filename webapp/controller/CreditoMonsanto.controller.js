@@ -12,7 +12,7 @@ sap.ui.define([
 		},
 		
 		filtraCredito: function(oEvent){
-			var sQuery = oEvent.getParameter("query");
+			var sQuery = oEvent.getParameter("query").toUpperCase();
 			var oFilter = new Filter("Descricao", FilterOperator.Contains, sQuery);
 			
 			var aFilters = [

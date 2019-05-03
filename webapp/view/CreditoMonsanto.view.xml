@@ -27,7 +27,7 @@
 							<Toolbar>
 								<Title text="Lista de Créditos"/>
 								<ToolbarSpacer/>
-								<SearchField placeholder="Pesquisar crédito..." width="30%" search="filtraCredito"/>
+								<SearchField placeholder="Pesquisar descrição..." width="30%" search="filtraCredito"/>
 							</Toolbar>
 						</t:toolbar>
 						<t:columns>
